@@ -1,0 +1,113 @@
+h2 {
+  font-family: 'Press Start 2P';
+  /* Fuente tipo pixel */
+  color: #00bbc8;
+  /* Color del texto en cian */
+  text-align: center;
+  /* Centrar el encabezado */
+}
+
+.details {
+  font-family: 'Press Start 2P';
+  /* Fuente tipo pixel */
+  color: #00796b;
+  /* Color del texto original */
+  margin-bottom: 20px;
+  /* Espacio debajo de los detalles */
+  padding: 15px;
+  /* Espaciado interno para la sección de detalles */
+  background-color: #00dae9;
+  /* Color de fondo cian pastel */
+  border: 2px solid #00bbc8;
+  /* Borde cian */
+  border-radius: 0;
+  /* Bordes cuadrados */
+}
+
+.details p {
+  margin: 5px 0;
+  /* Margen entre los párrafos */
+}
+
+.message-container {
+  display: flex;
+  /* Usar flexbox para centrar el contenido */
+  align-items: center;
+  /* Centrar verticalmente */
+  justify-content: center;
+  /* Centrar horizontalmente */
+  height: auto;
+  /* Ajustar la altura automáticamente */
+  margin-top: 0;
+  /* Sin margen superior para estar justo debajo de .details */
+}
+
+.message-box {
+  padding: 20px;
+  /* Espaciado interno */
+  border: 4px solid #00bbc8;
+  /* Borde cian */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  background-color: #ffeb3b;
+  /* Color de fondo del cuadro de mensaje amarillo */
+  text-align: center;
+  /* Centrar el texto en el cuadro de mensaje */
+  color: #333;
+  /* Color del texto */
+  transition: all 0.3s ease;
+  /* Transición suave para cambios de tamaño */
+  font-family: 'Press Start 2P';
+  /* Fuente tipo pixel */
+  justify-content: center;
+  align-content: center;
+}
+
+.message-box p {
+  margin: 0;
+  /* Sin margen en el párrafo del mensaje */
+  font-weight: bold;
+  /* Texto en negrita */
+}
+
+/* MODO OSCURO */
+/* Estilos para detalles en modo oscuro */
+:host-context(.dark-mode) .details {
+  color: #ffffff;
+  /* Texto blanco */
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #00dae9;
+  /* Fondo cian pastel */
+  border: 2px solid #00bbc8;
+  /* Borde cian */
+}
+
+/* Estilos para el texto dentro de detalles */
+:host-context(.dark-mode) .details p {
+  color: #d3d3d3;
+  /* Color claro para el texto de los párrafos */
+}
+
+/* Estilos para el cuadro de mensaje en modo oscuro */
+:host-context(.dark-mode) .message-box {
+  border: 4px solid #00bbc883;
+  /* Borde cian */
+  background-color: #00dae94f;
+  /* Fondo cian pastel */
+  color: #ffffff;
+  /* Texto blanco */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Estilo para el texto dentro del cuadro de mensaje */
+:host-context(.dark-mode) .message-box p {
+  color: #ffffff;
+  /* Texto blanco */
+}
+
+:host-context(.dark-mode) h2 {
+  color: #00bbc88a;
+  /* Color cian para el título */
+}

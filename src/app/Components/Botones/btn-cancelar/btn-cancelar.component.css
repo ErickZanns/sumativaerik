@@ -1,0 +1,57 @@
+:host {
+  flex: 1;
+  margin: 0 10px;
+  padding: 14px 28px; /* Espaciado ajustado */
+  font-size: 18px;
+  border: 3px solid #6d4c41; /* Color del borde (marrón oscuro) */
+  border-radius: 0; /* Bordes cuadrados */
+  background-color: #ff0000; /* Color de fondo (marrón claro) */
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  text-align: center; /* Asegura que el texto esté centrado */
+}
+
+:host:hover {
+  background-color: #d77a47; /* Color de fondo más claro al pasar el mouse */
+  transform: scale(1.1) rotate(2deg); /* Aumenta el tamaño y añade una ligera rotación */
+  color: #fff;
+}
+
+:host:active {
+  background-color: #6d4c41; /* Color de fondo más oscuro al hacer clic */
+  transform: translateY(4px) scale(0.98); /* Empuja el botón hacia abajo y reduce un poco su tamaño */
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode :host {
+  background-color: #ff0000a4; /* Color de fondo más oscuro en modo oscuro */
+  color: #d3d3d3; /* Texto claro en modo oscuro */
+  border: 3px solid #ff00008e; /* Borde más oscuro en modo oscuro */
+  border-radius: 0; /* Bordes cuadrados */
+  padding: 14px 28px; /* Espaciado ajustado */
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-mode :host:hover {
+  background-color: #98542f; /* Color de fondo más claro en modo oscuro al pasar el mouse */
+  transform: scale(1.12) rotate(-2deg); /* Aumenta el tamaño y rota en la dirección contraria */
+  color: #FFB380; /* Cambia el color del texto al pasar el mouse */
+}
+
+.dark-mode :host:active {
+  background-color: #4a241a; /* Fondo más oscuro en modo oscuro al hacer clic */
+  transform: translateY(4px) scale(0.95); /* Empuja hacia abajo y reduce el tamaño */
+}

@@ -1,0 +1,54 @@
+:host {
+  flex: 1;
+  margin: 0 10px;
+  padding: 14px 28px; /* Espaciado ajustado */
+  font-size: 18px;
+  border: 3px solid #2e7d32; /* Verde oscuro para el borde */
+  border-radius: 0; /* Bordes cuadrados */
+  background-color: #41cf48; /* Verde claro para el fondo */
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  text-align: center; /* Asegura que el texto esté centrado */
+}
+
+:host:hover {
+  background-color: #81c784; /* Verde más claro al pasar el mouse */
+  transform: scale(1.1) rotate(2deg); /* Aumenta el tamaño y añade una ligera rotación */
+  color: #fff;
+}
+
+:host:active {
+  background-color: #388e3c; /* Verde más oscuro al hacer clic */
+  transform: translateY(4px) scale(0.98); /* Empuja el botón hacia abajo y reduce un poco su tamaño */
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode :host {
+  background-color: #388e3c; /* Verde más oscuro para el fondo en modo oscuro */
+  color: #e0f2f1; /* Texto más claro en modo oscuro */
+  border: 3px solid #1b5e20; /* Verde más oscuro para el borde en modo oscuro */
+  border-radius: 0; /* Bordes cuadrados */
+  padding: 14px 28px;
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-mode :host:hover {
+  background-color: #66bb6a; /* Verde claro en modo oscuro al pasar el mouse */
+  transform: scale(1.12) rotate(-2deg); /* Aumenta el tamaño y rota en la dirección contraria */
+  color: #fff;
+}
+
+.dark-mode :host:active {
+  background-color: #2e7d32; /* Verde más oscuro en modo oscuro al hacer clic */
+  transform: translateY(4px) scale(0.95); /* Efecto de clic con un mayor desplazamiento */
+}

@@ -1,0 +1,47 @@
+:host {
+  flex: 1;
+  margin: 0 5px; /* Espacio entre botones */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  font-size: 16px; /* Tamaño de la fuente */
+  border: 3px solid #e94e77; /* Color tomate para el borde */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #f28c8c; /* Color de fondo tomate */
+  color: #fff; /* Color del texto */
+  font-family: 'Press Start 2P', cursive; /* Fuente tipo pixel */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+  min-width: 120px; /* Ancho mínimo para los botones */
+  display: flex; /* Utiliza flexbox para centrar el texto */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+:host:hover {
+  background-color: #f6a3a3; /* Fondo más claro al pasar el mouse */
+  transform: scale(1.1) rotate(-5deg); /* Aumentar el tamaño y rotar ligeramente */
+}
+
+:host:active {
+  background-color: #e94e77; /* Fondo más oscuro al hacer clic */
+  transform: scale(1) rotate(0deg); /* Regresa al tamaño normal y sin rotación */
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode :host {
+  background-color: #c74d6a; /* Fondo más oscuro en modo oscuro */
+  color: #d3d3d3; /* Color del texto en modo oscuro */
+  border: 3px solid #b23350; /* Borde más oscuro en modo oscuro */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.dark-mode :host:hover {
+  background-color: #d18a96; /* Fondo más claro al pasar el mouse en modo oscuro */
+  transform: scale(1.1) rotate(-5deg); /* Aumentar el tamaño y rotar ligeramente */
+  color: #FFB380; /* Cambiar color del texto en modo oscuro */
+}
+
+.dark-mode :host:active {
+  background-color: #b23350; /* Fondo más oscuro al hacer clic en modo oscuro */
+  transform: scale(1) rotate(0deg); /* Regresa al tamaño normal y sin rotación */
+}
